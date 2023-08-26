@@ -137,7 +137,7 @@ const Home = () => {
         </Carousel.Item>
 
       </Carousel>
-{/* <LazyLoad> */}
+<LazyLoad>
 
        <div className={styles.dots}>
   <div className={activeIndex === 0 ? `${styles.dots_flex} ${styles.active_dots_flex}` : styles.dots_flex} >
@@ -169,7 +169,7 @@ const Home = () => {
     </div>
   </div>
 </div>
-{/* </LazyLoad> */}
+</LazyLoad>
     </div>
 
 
