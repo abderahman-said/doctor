@@ -11,9 +11,9 @@ import img1 from "../../public/img/banner03.jpg"
 import Image from 'next/image';
 import imgw from "../../public/img/عملية الليزك للعيون.png"
 import img_doc from "../../public/img/doctor-1.png"
-import gg from "../../public/img/service.svg"
-import gog from "../../public/img/s.svg"
-import go0g from "../../public/img/service3.svg"
+import gg from "../../public/img/service.webp"
+import gog from "../../public/img/s.webp"
+import go0g from "../../public/img/service3.webp"
 import shada from "../../public/img/استشاري اول.png"
 import igws from "../../public/img/pentagon-mask-white.png"
 import { Col , Row } from 'react-bootstrap';
@@ -69,51 +69,14 @@ const Home = () => {
           <Carousel.Caption>
           <section className={styles.Car_caption}>
 <div>
-<Image src={imgtwo} width={400} height={400} className={styles.img} loading='lazy' ></Image>
+<LazyLoad height={"100%"} once> <Image src={imgtwo} width={400} height={400} className={styles.img} loading='lazy' ></Image></LazyLoad>
 </div>
 <div className={styles.Car_caption_left}>
+
 <div>
-
 <nav>
 <section>
-<Image  src={divide} width={50} height={50} loading='lazy'></Image>
-</section>
-<h5>فحص قطاع العين</h5>
-</nav>
-<nav>
-<section>
-<Image  src={divide} width={50} height={50}loading='lazy'></Image>
-</section>
-<h5>فحص قطاع العين</h5>
-
-</nav>
-<nav>
-<section>
-<Image  src={divide} width={50} height={50}loading='lazy'></Image>
-</section>
-<h5>فحص قطاع العين</h5>
-
-</nav>
-
-</div>
-<div>
-
-<nav>
-<section>
-<Image  src={divide} width={50} height={50}loading='lazy' ></Image>
-</section>
-<h5>فحص قطاع العين</h5>
-</nav>
-<nav>
-<section>
-<Image  src={divide} width={50} height={50}loading='lazy'></Image>
-</section>
-<h5>فحص قطاع العين</h5>
-
-</nav>
-<nav>
-<section>
-<Image  src={divide} width={50} height={50}loading='lazy'></Image>
+<LazyLoad height={"100%"} once> <Image  src={divide} width={50} height={50}loading='lazy'></Image></LazyLoad>
 </section>
 <h5>فحص قطاع العين</h5>
 
@@ -177,22 +140,7 @@ const Home = () => {
 </div>
           </Carousel.Caption>
         </Carousel.Item>
-        {/* <Carousel.Item>
-          <Image  src={banner02} alt="img_carosel" className={styles.Carousel_img_filter}  />
-          <Carousel.Caption>
-          <div className={styles.carsoul2}>
 
-<h3> تصحيح الابصار </h3>
-<p>طول وقصر النظر</p>
-<button className={styles.button}>
-<span className={styles.button_lg}>
-<span className={styles.button_sl}></span>
-<span  className={styles.button_text}> للحجز على رقم العياده    01148004734 </span>
-</span>
-</button>
-</div>
-          </Carousel.Caption>
-        </Carousel.Item> */}
       </Carousel>
 </LazyLoadComponent>
        <div className={styles.dots}>
@@ -229,6 +177,7 @@ const Home = () => {
 
 
     {/* ------------------- */}
+    <LazyLoad height={"100%"} once> 
 <div className={styles.bac_g}>
 <h2 className={styles.home_two_h2}>خدمات مركز الدكتور محمد عبد الحليم للعيون</h2>
 <section className={styles.home_two}>
@@ -356,7 +305,7 @@ const Home = () => {
   {/* </div> */}
 </section>
 </div>
-
+</LazyLoad>
 {/* ============== */}
 <section className={styles.why_we}  >
 <Container style={{maxWidth:"1200px" , padding:"0"}} dir='rtl'>
@@ -405,7 +354,7 @@ const Home = () => {
 
 </section>
 {/* ======== */}
-
+<LazyLoad height={"100%"} once> 
 <section className={styles.bac_h}>
   <div className={styles.bac_h_fle}>
 
@@ -432,9 +381,10 @@ const Home = () => {
     </div>
   </div>
 </section>
-
+</LazyLoad>
 {/* -------------------- */}
 
+<LazyLoad height={"100%"} once> 
 
 <section className={styles.why_we}>
 <Container style={{maxWidth:"1200px" ,padding:"0"  }}>
@@ -486,7 +436,10 @@ const Home = () => {
 
 </Container>
 </section>
+</LazyLoad>
 {/* ================== */}
+<LazyLoad height={"100%"} once> 
+
 <section  style={{ background:"#eee" ,paddingBottom:"3rem" }}>
 <Container style={{maxWidth:"1200px" ,padding:"0" }}>
 
@@ -595,7 +548,9 @@ const Home = () => {
   </button>
 </Container>
 </section>
+</LazyLoad>
 {/* ================================ */}
+<LazyLoad height={"100%"} once> 
 
 <div className={styles.photo}>
   <div className={styles.photo_filter}></div>
@@ -619,7 +574,10 @@ const Home = () => {
   </Container>
 
 </div>
+</LazyLoad>
 {/* ======================== */}
+<LazyLoad height={"100%"} once> 
+
 <section  style={{ background:"#eee" }}>
 <Container style={{maxWidth:"1200px" ,padding:"0" }}>
 
@@ -635,7 +593,7 @@ const Home = () => {
   <section className={styles.card_video}>
   <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-      <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe>
+      {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe> */}
 </section>
     <p>
       افضل دكتور عيون في المحلة دكتور محمد عبدالحليم- انظر الفارق قبل وبعد العملية
@@ -643,7 +601,7 @@ const Home = () => {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-      <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe>
+      {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe> */}
 
 </section>
     <p>
@@ -652,7 +610,7 @@ const Home = () => {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-      <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe>
+      {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe> */}
 
 </section>
     <p>
@@ -661,7 +619,7 @@ const Home = () => {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-      <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe>
+      {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe> */}
   
 </section>
     <p>
@@ -670,7 +628,7 @@ const Home = () => {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-      <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe>
+      {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ" allowFullScreen={true} ></iframe> */}
 
 </section>
     <p>
@@ -679,7 +637,7 @@ const Home = () => {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe} >
-      <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe>
+      {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe> */}
 
 </section>
     <p>
@@ -696,7 +654,9 @@ const Home = () => {
 
 
 </section>
+</LazyLoad>
 {/* ------------- */}
+<LazyLoad height={"100%"} once> 
 
 <section >
 <Container style={{maxWidth:"1200px" ,padding:"0" }} dir='rtl'>
@@ -756,7 +716,7 @@ const Home = () => {
 
 
 </section>
-
+</LazyLoad>
 <section className={styles.number} data-aos="fade-up">
     <h4>تواصل معنا الأن واحجز موعد كشفك التالي واحصل على افضل خدمة طبية</h4>
     <p>+201148004734</p>
@@ -768,6 +728,7 @@ const Home = () => {
 </button>
 </section>
 
+<LazyLoad height={"100%"} once> 
 
 <div className={styles.icon_relative} data-aos="fade-up">
 <div  className={styles.icon_relative_facebook}>
@@ -777,7 +738,7 @@ const Home = () => {
 <i className="fa-solid fa-phone"></i>
 </div>
 </div>
-
+</LazyLoad>
 <div >
       {showButton && (
         <div className={styles.acroll_up}

@@ -23,7 +23,10 @@ export default function RootLayout({ children }) {
     <>
     
       <html lang="en">
-
+      <meta charset="utf-8" />
+    <meta name="description" content="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price:  £9.24, Length: 784 pages"/>
+    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
+      <title>doc</title>
       <body >
       <NavBar />
 
