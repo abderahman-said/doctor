@@ -236,7 +236,7 @@ const Home = () => {
     </div>
 
     <div className={styles.home_two_left_absol} >
-    </LazyLoad> <Image alt="" src={imgw}  width={300} height={300} loading='lazy'></Image></LazyLoad>
+    <LazyLoad> <Image alt="" src={imgw}  width={300} height={300} loading='lazy'></Image></LazyLoad>
     </div>
     <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
 
