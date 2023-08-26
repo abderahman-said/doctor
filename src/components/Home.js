@@ -258,7 +258,7 @@ const Home = () => {
     <h2 className={styles.home_two_h2}>لماذا نحن</h2>
     <p>لأننا نوفر لك العناية الكاملة والتشخيص الجيد، مما يؤدي للبدء في طريق العلاج الصحيح، ودون الوقوع في دوامة المشاكل بسبب التشخيص الخاطئ لأمراض العيون.</p>
     <div className={styles.title_glass}>
-    <div><LazyLoad><Image alt='p' src={divide} width={40} loading='lazy'></Image></LazyLoad></div>
+    <div><Image alt='p' src={divide} width={40} loading='lazy'></Image></div>
 </div>
   </div>
     <Row className={styles.wh_doc_div}>
@@ -266,12 +266,12 @@ const Home = () => {
       <Col lg={8} sm={12} className={styles.col} data-aos="fade-left">
         <section className={styles.wh_doc_div_flex}>
         <div >
-         <section className={styles.wh_doc_div_back_img}><LazyLoad> <Image alt="" loading='lazy' src={"https://doctor-haleem.com/images/svg/sample2.svg"} width={50} height={50}></Image> </LazyLoad></section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt="" loading='lazy' src={"https://doctor-haleem.com/images/svg/sample2.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
         <div >
-         <section className={styles.wh_doc_div_back_img}><LazyLoad> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample.svg"} width={50} height={50}></Image> </LazyLoad></section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
@@ -279,12 +279,12 @@ const Home = () => {
 
         <section className={styles.wh_doc_div_flex}>
         <div >
-         <section className={styles.wh_doc_div_back_img}><LazyLoad> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample2.svg"} width={50} height={50}></Image></LazyLoad> </section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample2.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
         <div >
-         <section className={styles.wh_doc_div_back_img}><LazyLoad> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample.svg"} width={50} height={50}></Image></LazyLoad> </section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
