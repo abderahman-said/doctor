@@ -23,26 +23,26 @@ import AOS from 'aos';
 import { LazyLoadImage ,LazyLoadComponent } from 'react-lazy-load-image-component';
 import LazyLoad from 'react-lazyload';
 const Home = () => {
-  const [showButton, setShimg1owButton] = useState(false);
+  const [showButton, setShowButton] = useState(false);
   useEffect(() => { 
     AOS.init({ 
       duration: 1000
     }); 
 }, []);
-  // useEffect(() => {
-  //   function handleScroll() {
-  //     if (window.scrollY > 370) {
-  //       setShowButton(true);
-  //     } else {
-  //       setShowButton(false);
-  //     }
-  //   }
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 370) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    }
 
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   function handleButtonClick() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -51,7 +51,6 @@ const Home = () => {
   const handleSelect = (selectedIndex, e) => {
     setActiveIndex(selectedIndex);
   };
-
   return (
     <>
 {/* -------------------- */}
@@ -84,7 +83,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
+          <Image  src={banner02} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
           <Carousel.Caption>
             <div className={styles.carsoul2}>
 
@@ -101,7 +100,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
+          <Image  src={imgss} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
@@ -117,7 +116,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
+        <Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
@@ -135,7 +134,8 @@ const Home = () => {
 
       </Carousel>
 <LazyLoad>
-  <div className={styles.dots}>
+
+       <div className={styles.dots}>
   <div className={activeIndex === 0 ? `${styles.dots_flex} ${styles.active_dots_flex}` : styles.dots_flex} >
     <div><h5 className={activeIndex === 0 ? `${styles.dots_num} ${styles.activeDotNum}` : styles.dots_num}>1</h5></div>
     <div>
@@ -164,7 +164,7 @@ const Home = () => {
       <h6>نتشرف بزيارتكم</h6>
     </div>
   </div>
-  </div>
+</div>
 </LazyLoad>
     </div>
 
@@ -357,7 +357,7 @@ const Home = () => {
     <p>
     دقة في عملية التشخيص لوضع اليد على المشكلة الحقيقية.</p>
       </aside>
-      {/* <aside data-aos="fade-up">
+      <aside data-aos="fade-up">
       <Image alt="card_home" src={gog} width={70} height={70}loading='lazy'></Image>
         <h5>  ارخص الاسعار</h5>
     <p>
@@ -372,7 +372,7 @@ const Home = () => {
       <Image alt="card_home" src={go0g} width={70} height={70}loading='lazy'></Image>
         <h5> المتابعة </h5>
     <p>متابعة مع الحالة بشكل مستمر حتى تتم عملية الشفاء بفضل الله.</p>
-      </aside> */}
+      </aside>
     </section>
 
 </Container>
@@ -393,7 +393,7 @@ const Home = () => {
   </div>
 
 <section className={styles.card_h}>
-  {/* <div data-aos="fade-up">
+  <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
   <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover"   loading='lazy'></Image>
   </section>
@@ -448,7 +448,7 @@ const Home = () => {
 </section>
 
 
-  </div> */}
+  </div>
   <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
   <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
@@ -505,9 +505,9 @@ const Home = () => {
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
-  {/* <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
-  <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav> */}
+  <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
+  <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
 
   </div>
 </div>
