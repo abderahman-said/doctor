@@ -64,18 +64,18 @@ const Home = () => {
           <Carousel.Caption>
           <section className={styles.Car_caption}>
 <div>
-{/* <LazyLoad height={"100%"} once>  */}
+<LazyLoad height={"100%"} once> 
 <Image src={imgtwo} width={400} height={400} className={styles.img} loading='lazy' ></Image>
-{/* </LazyLoad> */}
+</LazyLoad>
 </div>
 <div className={styles.Car_caption_left}>
 
 <div>
 <nav>
 <section>
-{/* <LazyLoad height={"100%"} once>  */}
+<LazyLoad height={"100%"} once> 
  <Image alt=""  src={divide} width={50} height={50}loading='lazy'></Image>
- {/* </LazyLoad> */}
+ </LazyLoad>
 </section>
 <h5>فحص قطاع العين</h5>
 
@@ -258,7 +258,11 @@ const Home = () => {
     <h2 className={styles.home_two_h2}>لماذا نحن</h2>
     <p>لأننا نوفر لك العناية الكاملة والتشخيص الجيد، مما يؤدي للبدء في طريق العلاج الصحيح، ودون الوقوع في دوامة المشاكل بسبب التشخيص الخاطئ لأمراض العيون.</p>
     <div className={styles.title_glass}>
-    <div><Image alt='p' src={divide} width={40} loading='lazy'></Image></div>
+    <div>
+<LazyLoad height={"100%"} once> 
+      <Image alt='p' src={divide} width={40} loading='lazy'></Image>
+      </LazyLoad>
+      </div>
 </div>
   </div>
     <Row className={styles.wh_doc_div}>
@@ -338,7 +342,9 @@ const Home = () => {
     <h2 className={styles.home_two_h2}> مايميزنا عن غيرنا</h2>
     <p>التميز دائما يبدأ من الاهتمام بالمريض من أول مرحلة في التشخيص والكشف وحتى الوصول للشفاء بفضل الله تعالى، ونتميز باستخدامنا لكافة الطرق العلمية الصحيحة والأجهزة الحديثة في الكشف والتشخيص، ثم استخدام أحدث الطرق العلاجية والأجهزة المناسبة حتى الوصول للشفاء التام بفضل الله تعالى.</p>
 <div className={styles.title_glass}>
-<Image alt='p' src={divide}loading='lazy'></Image>
+<LazyLoad height={"100%"} once> 
+      <Image alt='p' src={divide} width={40} loading='lazy'></Image>
+      </LazyLoad>
 </div>
   </div>
 
@@ -392,7 +398,9 @@ const Home = () => {
     <h2 className={styles.home_two_h2}> نصائح طبية</h2>
     <p>هذه مجموعة من النصائح المهمة والتي تعتبر من أهم أسباب انتشار أمراض العين، ولا بد من اتباع تلك النصائح بعناية فائقة لتجنب أمراض العيون.</p>
 <div className={styles.title_glass}>
-<Image alt='p' src={divide}loading='lazy'></Image>
+<LazyLoad height={"100%"} once> 
+      <Image alt='p' src={divide} width={40} loading='lazy'></Image>
+      </LazyLoad>
 </div>
   </div>
 
@@ -455,7 +463,7 @@ const Home = () => {
   </div>
   <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
-  <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
+  <LazyLoad height={"100%"} once> <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image></LazyLoad>
   </section>
 <section className={styles.card_h_pad}>
   <h5>عمليات الليزك للعيون</h5>
@@ -469,7 +477,7 @@ const Home = () => {
   </div>
   <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
-  <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
+  <LazyLoad height={"100%"} once> <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image></LazyLoad>
   </section>
 <section className={styles.card_h_pad}>
   <h5>عمليات الليزك للعيون</h5>
