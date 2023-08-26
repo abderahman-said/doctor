@@ -236,7 +236,7 @@ const Home = () => {
     </div>
 
     <div className={styles.home_two_left_absol} >
-    <LazyLoad> <Image alt="" src={imgw}  width={300} height={300} loading='lazy'></Image></LazyLoad>
+    </LazyLoad> <Image alt="" src={imgw}  width={300} height={300} loading='lazy'></Image></LazyLoad>
     </div>
     <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
 
@@ -258,11 +258,7 @@ const Home = () => {
     <h2 className={styles.home_two_h2}>لماذا نحن</h2>
     <p>لأننا نوفر لك العناية الكاملة والتشخيص الجيد، مما يؤدي للبدء في طريق العلاج الصحيح، ودون الوقوع في دوامة المشاكل بسبب التشخيص الخاطئ لأمراض العيون.</p>
     <div className={styles.title_glass}>
-    <div>
-<LazyLoad height={"100%"} once> 
-      <Image alt='p' src={divide} width={40} loading='lazy'></Image>
-      </LazyLoad>
-      </div>
+    <div><Image alt='p' src={divide} width={40} loading='lazy'></Image></div>
 </div>
   </div>
     <Row className={styles.wh_doc_div}>
@@ -342,9 +338,7 @@ const Home = () => {
     <h2 className={styles.home_two_h2}> مايميزنا عن غيرنا</h2>
     <p>التميز دائما يبدأ من الاهتمام بالمريض من أول مرحلة في التشخيص والكشف وحتى الوصول للشفاء بفضل الله تعالى، ونتميز باستخدامنا لكافة الطرق العلمية الصحيحة والأجهزة الحديثة في الكشف والتشخيص، ثم استخدام أحدث الطرق العلاجية والأجهزة المناسبة حتى الوصول للشفاء التام بفضل الله تعالى.</p>
 <div className={styles.title_glass}>
-<LazyLoad height={"100%"} once> 
-      <Image alt='p' src={divide} width={40} loading='lazy'></Image>
-      </LazyLoad>
+<Image alt='p' src={divide}loading='lazy'></Image>
 </div>
   </div>
 
@@ -398,9 +392,7 @@ const Home = () => {
     <h2 className={styles.home_two_h2}> نصائح طبية</h2>
     <p>هذه مجموعة من النصائح المهمة والتي تعتبر من أهم أسباب انتشار أمراض العين، ولا بد من اتباع تلك النصائح بعناية فائقة لتجنب أمراض العيون.</p>
 <div className={styles.title_glass}>
-<LazyLoad height={"100%"} once> 
-      <Image alt='p' src={divide} width={40} loading='lazy'></Image>
-      </LazyLoad>
+<Image alt='p' src={divide}loading='lazy'></Image>
 </div>
   </div>
 
@@ -463,7 +455,7 @@ const Home = () => {
   </div>
   <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
-  <LazyLoad height={"100%"} once> <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image></LazyLoad>
+  <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
   </section>
 <section className={styles.card_h_pad}>
   <h5>عمليات الليزك للعيون</h5>
@@ -477,7 +469,7 @@ const Home = () => {
   </div>
   <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
-  <LazyLoad height={"100%"} once> <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image></LazyLoad>
+  <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
   </section>
 <section className={styles.card_h_pad}>
   <h5>عمليات الليزك للعيون</h5>
