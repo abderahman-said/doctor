@@ -30,7 +30,7 @@ function About() {
     <h2 className={styles.home_two_h2}> فيديو العمليات</h2>
     <p>مجموعة من فيديوهات مركز الدكتور محمد عبد الحليم</p>
 <div className={styles.title_glass}>
-<div><Image alt='p' src={divide} loading='lazy'></Image></div>
+<div><LazyLoad height={"100%"} once><Image alt='p' src={divide} loading='lazy'></Image></LazyLoad></div>
 
 </div>
   </div>
@@ -39,7 +39,7 @@ function About() {
   <section className={styles.card_video}>
   <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-  <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe>
+  {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe> */}
 </section>
     <p>
       افضل دكتور عيون في المحلة دكتور محمد عبدالحليم- انظر الفارق قبل وبعد العملية
@@ -47,7 +47,7 @@ function About() {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-  <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe>
+  {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe> */}
 </section>
     <p>
       افضل دكتور عيون في المحلة دكتور محمد عبدالحليم- انظر الفارق قبل وبعد العملية
@@ -55,7 +55,7 @@ function About() {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-  <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe>
+  {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe> */}
 </section>
     <p>
       افضل دكتور عيون في المحلة دكتور محمد عبدالحليم- انظر الفارق قبل وبعد العملية
@@ -63,7 +63,7 @@ function About() {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-  <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe>
+  {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe> */}
 </section>
     <p>
       افضل دكتور عيون في المحلة دكتور محمد عبدالحليم- انظر الفارق قبل وبعد العملية
@@ -71,7 +71,7 @@ function About() {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe}>
-  <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe>
+  {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe> */}
 </section>
     <p>
       افضل دكتور عيون في المحلة دكتور محمد عبدالحليم- انظر الفارق قبل وبعد العملية
@@ -79,7 +79,7 @@ function About() {
       </aside>
       <aside data-aos="fade-up">
       <section className={styles.c_iframe} >
-  <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe>
+  {/* <iframe src="https://www.youtube.com/embed/Kch8n4tcOZQ"  allowFullScreen={true} ></iframe> */}
 </section>
     <p>
       افضل دكتور عيون في المحلة دكتور محمد عبدالحليم- انظر الفارق قبل وبعد العملية

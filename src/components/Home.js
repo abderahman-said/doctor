@@ -661,7 +661,7 @@ const Home = () => {
 
 </section>
 </LazyLoad>
-<LazyLoad>
+<LazyLoad height={"100%"} once>
 
 <section className={styles.number} data-aos="fade-up">
     <h4>تواصل معنا الأن واحجز موعد كشفك التالي واحصل على افضل خدمة طبية</h4>
