@@ -64,18 +64,18 @@ const Home = () => {
           <Carousel.Caption>
           <section className={styles.Car_caption}>
 <div>
-<LazyLoad height={"100%"} once> 
+{/* <LazyLoad height={"100%"} once>  */}
 <Image src={imgtwo} width={400} height={400} className={styles.img} loading='lazy' ></Image>
-</LazyLoad>
+{/* </LazyLoad> */}
 </div>
 <div className={styles.Car_caption_left}>
 
 <div>
 <nav>
 <section>
-<LazyLoad height={"100%"} once> 
+{/* <LazyLoad height={"100%"} once>  */}
  <Image alt=""  src={divide} width={50} height={50}loading='lazy'></Image>
- </LazyLoad>
+ {/* </LazyLoad> */}
 </section>
 <h5>فحص قطاع العين</h5>
 
