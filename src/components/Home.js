@@ -509,15 +509,9 @@ const Home = () => {
   {/* <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav> */}
-<LazyLoad height={"100%"} once> 
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
-  </LazyLoad>
-  <LazyLoad height={"100%"} once> 
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
-  </LazyLoad>
-  <LazyLoad height={"100%"} once> 
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
-  </LazyLoad>
 
   </div>
 </div>
