@@ -1,19 +1,19 @@
 "use client"
 import Container from 'react-bootstrap/Container';
 import React, { useState, useEffect } from 'react';
-import imgtwo from "../../public/img/doctor-image1.webp"
+import imgtwo from "../../public/img/doctor-image1.png"
 import banner02 from "../../public/img/banner02.jpg"
 import divide from "../../public/img/divider.svg";
 import imfg from "../../public/img/banner01.jpg";
-import imgss from "../../public/img/banner04 (1).webp"
+import imgss from "../../public/img/banner04 (1).png"
 import styles from "./../app/page.module.css"
 import img1 from "../../public/img/banner03.jpg"
 import Image from 'next/image';
 import imgw from "../../public/img/عملية الليزك للعيون.png"
 import img_doc from "../../public/img/doctor-1.png"
-import gg from "../../public/img/service.webp"
-import gog from "../../public/img/s.webp"
-import go0g from "../../public/img/service3.webp"
+import gg from "../../public/img/service.svg"
+import gog from "../../public/img/s.svg"
+import go0g from "../../public/img/service3.svg"
 import shada from "../../public/img/استشاري اول.png"
 import igws from "../../public/img/pentagon-mask-white.png"
 import { Col , Row } from 'react-bootstrap';
@@ -64,14 +64,18 @@ const Home = () => {
           <Carousel.Caption>
           <section className={styles.Car_caption}>
 <div>
+<LazyLoad height={"100%"} once> 
 <Image src={imgtwo} width={400} height={400} className={styles.img} loading='lazy' ></Image>
+</LazyLoad>
 </div>
 <div className={styles.Car_caption_left}>
 
 <div>
 <nav>
 <section>
+<LazyLoad height={"100%"} once> 
  <Image alt=""  src={divide} width={50} height={50}loading='lazy'></Image>
+ </LazyLoad>
 </section>
 <h5>فحص قطاع العين</h5>
 
@@ -339,7 +343,7 @@ const Home = () => {
   </div>
 
     <section className={styles.card_home}>
-      <aside data-aos="fade-up">
+      {/* <aside data-aos="fade-up">
       <Image alt="card_home" src={gg} width={70} height={70}loading='lazy'></Image>
         <h5> كل العمليات</h5>
     <p>
@@ -356,7 +360,7 @@ const Home = () => {
         <h5>  الدقة</h5>
     <p>
     دقة في عملية التشخيص لوضع اليد على المشكلة الحقيقية.</p>
-      </aside>
+      </aside> */}
       <aside data-aos="fade-up">
       <Image alt="card_home" src={gog} width={70} height={70}loading='lazy'></Image>
         <h5>  ارخص الاسعار</h5>
@@ -393,7 +397,7 @@ const Home = () => {
   </div>
 
 <section className={styles.card_h}>
-  <div data-aos="fade-up">
+  {/* <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
   <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover"   loading='lazy'></Image>
   </section>
@@ -434,7 +438,7 @@ const Home = () => {
 </section>
 
 
-  </div>
+  </div> */}
   <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
  <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
