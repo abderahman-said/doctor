@@ -47,15 +47,9 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   const [activeIndex, setActiveIndex] = useState(0);
-
   const handleSelect = (selectedIndex, e) => {
     setActiveIndex(selectedIndex);
   };
-
-  // const handleClick = (index) => {
-  //   setActiveIndex(index);
-  // };
-
   return (
     <>
 {/* -------------------- */}
@@ -65,7 +59,7 @@ const Home = () => {
 <Carousel fade activeIndex={activeIndex} onSelect={handleSelect} interval={1000}>
   
         <Carousel.Item>
-        <Image loading='lazy'  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} />
+        <LazyLoadImage loading='lazy'  src={"https://doctor-psi-orpin.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner01.09afa032.jpg&w=1920&q=75"} alt="img_carosel" className={styles.Carousel_img_filter} />
           <Carousel.Caption>
           <section className={styles.Car_caption}>
 <div>
@@ -76,7 +70,7 @@ const Home = () => {
 <div>
 <nav>
 <section>
- <Image alt=""   src={divide} width={50} height={50}loading='lazy'></Image>
+<Image alt="" src={divide} width={50} height={50}loading='lazy'></Image>
 </section>
 <h5>فحص قطاع العين</h5>
 
@@ -88,7 +82,8 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={banner02} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
+        <LazyLoadImage loading='lazy'  src={"https://doctor-psi-orpin.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner01.09afa032.jpg&w=1920&q=75"} alt="img_carosel" className={styles.Carousel_img_filter} />
+
           <Carousel.Caption>
             <div className={styles.carsoul2}>
 
@@ -105,7 +100,8 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={imgss} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
+        <LazyLoadImage loading='lazy'  src={"https://doctor-psi-orpin.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner01.09afa032.jpg&w=1920&q=75"} alt="img_carosel" className={styles.Carousel_img_filter} />
+
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
@@ -121,7 +117,8 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
+        <LazyLoadImage loading='lazy'  src={"https://doctor-psi-orpin.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner01.09afa032.jpg&w=1920&q=75"} alt="img_carosel" className={styles.Carousel_img_filter} />
+
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
