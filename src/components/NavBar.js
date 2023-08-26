@@ -9,6 +9,7 @@ import img from "../../public/img/ll.png"
 import Image from 'next/image';
 import Link from 'next/link';
 import {LazyLoadComponent} from "react-lazy-load-image-component"
+import LazyLoad from 'react-lazyload';
 
 const OffCanvasExample = ({ name, ...props }) => {
   const [show, setShow] = useState(false);
@@ -34,7 +35,8 @@ const OffCanvasExample = ({ name, ...props }) => {
  
   return (
     <div>
-<LazyLoadComponent>
+<LazyLoad>
+
       
           <section className={styles.p_nav_top} >
 
@@ -67,10 +69,12 @@ const OffCanvasExample = ({ name, ...props }) => {
 
 
 </section>
-</LazyLoadComponent>
+</LazyLoad>
+
 
 {/* =================== */}
-<LazyLoadComponent>
+<LazyLoad>
+
 
 <Navbar  expand="lg" dir='rtl' id='top_nav' className={styles.b_nav}>
 
@@ -109,10 +113,12 @@ const OffCanvasExample = ({ name, ...props }) => {
 <i className="fa-solid fa-bars-staggered"></i>
       </Button>
 </Navbar>
-</LazyLoadComponent>
+</LazyLoad>
 
 
-<LazyLoadComponent>
+
+<LazyLoad>
+
 
 
       <Offcanvas show={show} onHide={handleClose} {...props}>
@@ -132,7 +138,8 @@ const OffCanvasExample = ({ name, ...props }) => {
         </Offcanvas.Body>
       </Offcanvas>
 
-      </LazyLoadComponent>
+      </LazyLoad>
+
 
 {/* ===== */}
 
