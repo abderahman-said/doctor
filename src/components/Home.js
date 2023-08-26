@@ -87,7 +87,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={banner02} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
+          <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
           <Carousel.Caption>
             <div className={styles.carsoul2}>
 
@@ -104,7 +104,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={imgss} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
+          <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
@@ -120,7 +120,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
+        <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
