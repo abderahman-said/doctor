@@ -81,54 +81,7 @@ function About() {
 
 </Link>
   </div>
-  <div data-aos="fade-up"> 
-<Link href={"/aritc"}>
 
-  <section className={styles.img_wrapper} >
-    <Image alt="w"  className={styles.inner_img} src={imgw} objectFit="cover"  loading='lazy' ></Image>
-  </section>
-<section className={styles.card_h_pad}>
-  <h5>عمليات الليزك للعيون</h5>
-    <h6>الخميس ,01/09/2022 | دكتور محمد عبد الحليم</h6>
-    <p>
-    عمليات الليزك للعيون ، الليزك هو أكثر جراحات الليزر شيوعًا التي يتم إجراؤها لعلاج قـصر النظر (قصر النظر) ومد البـصر (طول النظر) واللابؤرية. مثل الأنواع الأخرى من الجراحة الانكسارية ، فإن اجراء الليزك يعيد تشكيل القرنية للسماح للضوء الداخل للعين بالتر.....
-    </p>
-</section>
-
-</Link>
-  </div>
-  <div data-aos="fade-up">
-<Link href={"/aritc"}>
-
-  <section className={styles.img_wrapper} >
-    <Image alt="w"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
-  </section>
-<section className={styles.card_h_pad}>
-  <h5>عمليات الليزك للعيون</h5>
-    <h6>الخميس ,01/09/2022 | دكتور محمد عبد الحليم</h6>
-    <p>
-    عمليات الليزك للعيون ، الليزك هو أكثر جراحات الليزر شيوعًا التي يتم إجراؤها لعلاج قـصر النظر (قصر النظر) ومد البـصر (طول النظر) واللابؤرية. مثل الأنواع الأخرى من الجراحة الانكسارية ، فإن اجراء الليزك يعيد تشكيل القرنية للسماح للضوء الداخل للعين بالتر.....
-    </p>
-</section>
-
-</Link>
-  </div>
-  <div data-aos="fade-up">
-<Link href={"/aritc"}>
-
-  <section className={styles.img_wrapper} >
-    <Image alt="w"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
-  </section>
-<section className={styles.card_h_pad}>
-  <h5>عمليات الليزك للعيون</h5>
-    <h6>الخميس ,01/09/2022 | دكتور محمد عبد الحليم</h6>
-    <p>
-    عمليات الليزك للعيون ، الليزك هو أكثر جراحات الليزر شيوعًا التي يتم إجراؤها لعلاج قـصر النظر (قصر النظر) ومد البـصر (طول النظر) واللابؤرية. مثل الأنواع الأخرى من الجراحة الانكسارية ، فإن اجراء الليزك يعيد تشكيل القرنية للسماح للضوء الداخل للعين بالتر.....
-    </p>
-</section>
-
-</Link>
-  </div>
 
 </section>
 <div>
