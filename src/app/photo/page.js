@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 import shada from "../../../public/img/استشاري اول.png"
 import { useEffect } from 'react';
 import Aos from 'aos';
+import LazyLoad from 'react-lazyload';
 
  function Photo() {
   useEffect(() => { 
@@ -15,10 +16,11 @@ import Aos from 'aos';
   return (
    <>
 
-<div className={styles.photo_page} data-aos="fade-down">
+<LazyLoad height={"100%"} once> 
+   <div className={styles.photo_page} data-aos="fade-down"> 
   <h2>عن الدكتور محمد عبد الحليم</h2>
   <p>  <span>الرئيسية    </span>         /      الصور والأعمال            </p>
-</div> 
+</div> </LazyLoad>
 <div className={styles.photo_page_flex} >
 <Container style={{maxWidth:"1200px" ,padding:"0"  }}>
 <div className={styles.photo_flex}>
@@ -30,9 +32,9 @@ import Aos from 'aos';
   <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav>
+  {/* <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav>
-  <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav>
-  <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav>
+  <nav data-aos="fade-up"><Image alt="" src={shada} width={360}loading='lazy'></Image></nav> */}
 
   </div>
 </div>

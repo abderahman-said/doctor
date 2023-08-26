@@ -37,7 +37,6 @@ const Home = () => {
         setShowButton(false);
       }
     }
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -249,7 +248,7 @@ const Home = () => {
 </div>
 </LazyLoad>
 {/* ============== */}
-<LazyLoad>
+<LazyLoad height={"100%"} once>
 
 <section className={styles.why_we}  >
 <Container style={{maxWidth:"1200px" , padding:"0"}} dir='rtl'>

@@ -11,14 +11,6 @@ function About() {
   const playRef = useRef(null);
   const images = [
     {
-      original: "https://doctor-haleem.com/images/cv/cv7.jpeg",
-      thumbnail: "https://doctor-haleem.com/images/cv/cv7.jpeg",
-    },
-    {
-      original: "https://doctor-haleem.com/images/cv/cv6.jpeg",
-      thumbnail: "https://doctor-haleem.com/images/cv/cv6.jpeg",
-    },
-    {
       original: "https://doctor-haleem.com/images/cv/cv11.jpeg",
       thumbnail: "https://doctor-haleem.com/images/cv/cv11.jpeg",
     },

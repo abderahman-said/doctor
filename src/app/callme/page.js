@@ -8,6 +8,7 @@ import Map from "../../Map/map"
 import { useEffect } from "react";
 import Aos from "aos";
 import divide from "../../../public/img/divider.svg";
+import LazyLoad from "react-lazyload";
 
 function About() {
   useEffect(() => { 
@@ -17,10 +18,11 @@ function About() {
 }, []);
   return (
    <>
-  <div className={styles.photo_page}>
+ <LazyLoad height={"100%"} once> 
+   <div className={styles.photo_page} data-aos="fade-down"> 
   <h2>عن الدكتور محمد عبد الحليم</h2>
   <p>  <span>الرئيسية    </span>         /      الصور والأعمال            </p>
-</div> 
+</div> </LazyLoad>
 
 <section  style={{ background:"#eee" ,paddingBottom:"3rem" }}>
 <Container style={{maxWidth:"1200px" ,padding:"0" }}>

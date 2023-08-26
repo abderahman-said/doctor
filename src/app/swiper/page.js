@@ -13,6 +13,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
 import Aos from 'aos';
+import LazyLoad from 'react-lazyload';
 
 function About() {
   const [show, setShow] = useState(false);
@@ -47,11 +48,11 @@ function About() {
         </Modal.Body>
       </Modal>
 
-   <div className={styles.photo_page}>
+      <LazyLoad height={"100%"} once> 
+   <div className={styles.photo_page} data-aos="fade-down"> 
   <h2>عن الدكتور محمد عبد الحليم</h2>
   <p>  <span>الرئيسية    </span>         /      الصور والأعمال            </p>
-</div> 
-
+</div> </LazyLoad>
 <Container style={{maxWidth:"1200px"}} dir='rtl'>
 <section className={styles.service}>
     <div className={styles.right}>

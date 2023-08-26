@@ -7,6 +7,7 @@ import ImageGallery from "react-image-gallery";
 import styles from "../page.module.css"
 import docto from "../../../public/img/عملية الليزك للعيون.png";
 import Aos from 'aos';
+import LazyLoad from 'react-lazyload';
 
 function About() {
   useEffect(() => { 
@@ -16,10 +17,11 @@ function About() {
 }, []);
   return (
  <>
+<LazyLoad height={"100%"} once> 
    <div className={styles.photo_page} data-aos="fade-down"> 
   <h2>عن الدكتور محمد عبد الحليم</h2>
   <p>  <span>الرئيسية    </span>         /      الصور والأعمال            </p>
-</div> 
+</div> </LazyLoad>
 <div style={{background:'#eee'}}>
 <Container style={{maxWidth:"1200px" ,background:'#eee' , padding:"3rem 10px"}} dir='rtl'>
   <h2 className={styles.arti_h2}>المقالات</h2>
@@ -60,7 +62,7 @@ function About() {
 
 
     </aside>
-    <aside data-aos="fade-up">
+    {/* <aside data-aos="fade-up">
     <Image alt='q' src={docto} width={150} loading='lazy'></Image>
 
 
@@ -81,7 +83,7 @@ function About() {
       </div>
 
 
-    </aside>
+    </aside> */}
   </div>
   <div className={styles.arti_right}>
   <Image alt='q' src={docto} data-aos="fade-up" loading='lazy'></Image>
