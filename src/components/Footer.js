@@ -7,14 +7,18 @@ import imd from "../../public/img/logo.png"
 
 import Image from 'next/image';
 import { Container } from 'react-bootstrap';
+import LazyLoad from 'react-lazyload'
+import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 const Footer = () => {
   return (
 <div className={styles.footer_bac}>
+<LazyLoadComponent>
+
     <Container style={{maxWidth:'1200px'}} dir='rtl'>
         <footer className={styles.footer}>
             <div className={styles.foot}>
-                <Image alt="" src={img} width={200} height={160}></Image>
+                <Image alt="" src={img} width={200} height={160}loading='lazy'></Image>
                 <div  className={styles.nav_flex_top_div}>
                 <i className="fa-solid fa-location-dot"></i>
                 <h6>   العنوان :مصر - المحلة الكبرى - ميدان الشون _ مزلقان السكه الحديد<br></br> برج شركه الغاز _ مدخل السبع بنات </h6>
@@ -61,11 +65,12 @@ const Footer = () => {
 </div>
 </Container>
 <div className={styles.deltawy_footer} >
-<Image alt="" src={imd} width={100}></Image>
+<Image alt="" src={imd} width={100} loading='lazy'></Image>
 
 <p>جميع الحقوق محفوظة لدي دلتاوي </p>
 </div>
 
+</LazyLoadComponent>
 
 </div>
   )

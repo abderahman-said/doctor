@@ -5,7 +5,7 @@ import imgtwo from "../../public/img/doctor-image1.png"
 import banner02 from "../../public/img/banner02.jpg"
 import divide from "../../public/img/divider.svg";
 import imfg from "../../public/img/banner01.jpg";
-import imgss from "../../public/img/banner04 (1).png"
+import imgss from "../../public/img/banner04 (1).webp"
 import styles from "./../app/page.module.css"
 import img1 from "../../public/img/banner03.jpg"
 import Image from 'next/image';
@@ -61,22 +61,22 @@ const Home = () => {
 {/* -------------------- */}
 
 <div className={styles.Carousel_img}  >
-<LazyLoadComponent>
+
 <Carousel fade activeIndex={activeIndex} onSelect={handleSelect} interval={1000}>
   
         <Carousel.Item>
-        <LazyLoad height={"100%"} once> <Image loading='lazy' src={img1} alt="img_carosel" className={styles.Carousel_img_filter} /></LazyLoad>
+        <Image loading='lazy'  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} />
           <Carousel.Caption>
           <section className={styles.Car_caption}>
 <div>
-<LazyLoad height={"100%"} once> <Image src={imgtwo} width={400} height={400} className={styles.img} loading='lazy' ></Image></LazyLoad>
+<Image src={imgtwo} width={400} height={400} className={styles.img} loading='lazy' ></Image>
 </div>
 <div className={styles.Car_caption_left}>
 
 <div>
 <nav>
 <section>
-<LazyLoad height={"100%"} once> <Image  src={divide} width={50} height={50}loading='lazy'></Image></LazyLoad>
+ <Image alt=""   src={divide} width={50} height={50}loading='lazy'></Image>
 </section>
 <h5>فحص قطاع العين</h5>
 
@@ -88,9 +88,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <LazyLoad height={"100%"} once>
-          <Image  src={banner02} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
-          </LazyLoad>
+          <Image  src={banner02} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
           <Carousel.Caption>
             <div className={styles.carsoul2}>
 
@@ -107,9 +105,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <LazyLoad height={"100%"} once>
-          <Image  src={imgss} alt="img_carosel" className={styles.Carousel_img_filter}loading='lazy' />
-          </LazyLoad>
+          <Image  src={imgss} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
@@ -125,7 +121,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <LazyLoad height={"100%"} once><Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter}loading='lazy' /></LazyLoad>
+        <Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
@@ -142,7 +138,6 @@ const Home = () => {
         </Carousel.Item>
 
       </Carousel>
-</LazyLoadComponent>
        <div className={styles.dots}>
   <div className={activeIndex === 0 ? `${styles.dots_flex} ${styles.active_dots_flex}` : styles.dots_flex} >
     <div><h5 className={activeIndex === 0 ? `${styles.dots_num} ${styles.activeDotNum}` : styles.dots_num}>1</h5></div>
@@ -244,62 +239,7 @@ const Home = () => {
     <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
 
 </div>
-<div className={styles.home_two_left_rlative}>
-    <div >
-   <Image alt="" src={igws} width={320} height={330} loading='lazy'></Image>
-    </div>
 
-    <div className={styles.home_two_left_absol} >
-    <Image alt="" src={imgw}  width={300} height={300}loading='lazy'></Image>
-    </div>
-    <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
-
-</div>
-<div className={styles.home_two_left_rlative}>
-    <div >
-    <Image alt="" src={igws} width={320} height={330} loading='lazy'></Image>
-    </div>
-
-    <div className={styles.home_two_left_absol} >
-    <Image alt="" src={imgw}  width={300} height={300}loading='lazy'></Image>
-    </div>
-    <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
-
-</div>
-
-<div className={styles.home_two_left_rlative}>
-    <div >
-    <Image alt="" src={igws} width={320} height={330} loading='lazy'></Image>
-    </div>
-
-    <div className={styles.home_two_left_absol} >
-    <Image alt="" src={imgw}  width={300} height={300}loading='lazy'></Image>
-    </div>
-    <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
-
-</div>
-<div className={styles.home_two_left_rlative}>
-    <div >
-    <Image alt="" src={igws} width={320} height={330} ></Image>
-    </div>
-
-    <div className={styles.home_two_left_absol} >
-    <Image alt="" src={imgw}  width={300} height={300}></Image>
-    </div>
-    <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
-
-</div>
-<div className={styles.home_two_left_rlative}>
-    <div >
-    <Image alt="" src={igws} width={320} height={330} loading='lazy'></Image>
-    </div>
-
-    <div className={styles.home_two_left_absol} >
-    <Image alt="" src={imgw}  width={300} height={300}loading='lazy'></Image>
-    </div>
-    <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
-
-</div>
 
   </div>
   {/* </div> */}
@@ -307,6 +247,8 @@ const Home = () => {
 </div>
 </LazyLoad>
 {/* ============== */}
+<LazyLoad>
+
 <section className={styles.why_we}  >
 <Container style={{maxWidth:"1200px" , padding:"0"}} dir='rtl'>
 
@@ -353,6 +295,7 @@ const Home = () => {
     </Container>
 
 </section>
+</LazyLoad>
 {/* ======== */}
 <LazyLoad height={"100%"} once> 
 <section className={styles.bac_h}>
@@ -717,6 +660,8 @@ const Home = () => {
 
 </section>
 </LazyLoad>
+<LazyLoad>
+
 <section className={styles.number} data-aos="fade-up">
     <h4>تواصل معنا الأن واحجز موعد كشفك التالي واحصل على افضل خدمة طبية</h4>
     <p>+201148004734</p>
@@ -727,7 +672,7 @@ const Home = () => {
     </span>
 </button>
 </section>
-
+</LazyLoad>
 <LazyLoad height={"100%"} once> 
 
 <div className={styles.icon_relative} data-aos="fade-up">

@@ -8,6 +8,7 @@ import styles from "../app/page.module.css"
 import img from "../../public/img/ll.png"
 import Image from 'next/image';
 import Link from 'next/link';
+import {LazyLoadComponent} from "react-lazy-load-image-component"
 
 const OffCanvasExample = ({ name, ...props }) => {
   const [show, setShow] = useState(false);
@@ -33,11 +34,13 @@ const OffCanvasExample = ({ name, ...props }) => {
  
   return (
     <div>
+<LazyLoadComponent>
+      
           <section className={styles.p_nav_top} >
 
 
 <div dir='rtl' className={styles.nav_flex_top} >
-<Image alt="" src={img} width={100}></Image>
+<Image alt="" src={img} width={100} loading='lazy'></Image>
   <div >
     <div className={styles.nav_flex_top_div}>
       <i className="fa-solid fa-square-phone-flip"></i>
@@ -64,7 +67,11 @@ const OffCanvasExample = ({ name, ...props }) => {
 
 
 </section>
+</LazyLoadComponent>
+
 {/* =================== */}
+<LazyLoadComponent>
+
 <Navbar  expand="lg" dir='rtl' id='top_nav' className={styles.b_nav}>
 
 
@@ -102,9 +109,10 @@ const OffCanvasExample = ({ name, ...props }) => {
 <i className="fa-solid fa-bars-staggered"></i>
       </Button>
 </Navbar>
+</LazyLoadComponent>
 
 
-
+<LazyLoadComponent>
 
 
       <Offcanvas show={show} onHide={handleClose} {...props}>
@@ -112,7 +120,7 @@ const OffCanvasExample = ({ name, ...props }) => {
         </Offcanvas.Header>
         <Offcanvas.Body>
         <section className={styles.nav_flex_mobile} >
-       <Image alt="" src={img} width={250}></Image>
+       <Image alt="" src={img} width={250} loading='lazy'></Image>
 
 <h6>الرئيسية</h6>
 <h6>عن الدكتور</h6>
@@ -124,6 +132,7 @@ const OffCanvasExample = ({ name, ...props }) => {
         </Offcanvas.Body>
       </Offcanvas>
 
+      </LazyLoadComponent>
 
 {/* ===== */}
 
