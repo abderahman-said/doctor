@@ -167,7 +167,10 @@ padding: 10px;
     flex-direction: column;
     gap: 1rem;
   }
- 
+  .home_two_right li {
+    font-size: 1rem;
+    font-weight: 500 !important;
+  }
   .home_two_left {
     display: flex;
     align-items: center;
