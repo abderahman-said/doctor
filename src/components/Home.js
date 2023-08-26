@@ -1,7 +1,7 @@
 "use client"
 import Container from 'react-bootstrap/Container';
 import React, { useState, useEffect } from 'react';
-import imgtwo from "../../public/img/doctor-image1.png"
+import imgtwo from "../../public/img/doctor-image1.webp"
 import banner02 from "../../public/img/banner02.jpg"
 import divide from "../../public/img/divider.svg";
 import imfg from "../../public/img/banner01.jpg";
