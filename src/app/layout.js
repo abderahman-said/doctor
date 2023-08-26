@@ -1,4 +1,3 @@
-"use client";
 import './globals.css'
 import { Cairo } from 'next/font/google'
 
@@ -6,10 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import 'aos/dist/aos.css';
-import { lazy } from 'react';
 import dynamic from 'next/dynamic';
-// const Footer =lazy(() => import("../components/Footer"))
-
 
 const NavBar = dynamic(() => import('../components/NavBar'), {
 ssr : false
