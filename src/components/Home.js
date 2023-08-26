@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import React, { useState, useEffect } from 'react';
 import imgtwo from "../../public/img/doctor-image1.png"
 import banner02 from "../../public/img/banner02.jpg"
-import divide from "../../public/img/divider.webp";
+import divide from "../../public/img/divider.svg";
 import imfg from "../../public/img/banner01.jpg";
 import imgss from "../../public/img/banner04 (1).webp"
 import styles from "./../app/page.module.css"
@@ -72,7 +72,7 @@ const Home = () => {
 <div>
 <nav>
 <section>
- <Image alt=""  src={divide} loading='lazy' className={styles.l}></Image>
+ <Image alt=""  src={divide} width={50} height={50}loading='lazy'></Image>
 </section>
 <h5>فحص قطاع العين</h5>
 
