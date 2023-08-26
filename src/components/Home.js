@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import React, { useState, useEffect } from 'react';
 import imgtwo from "../../public/img/doctor-image1.png"
 import banner02 from "../../public/img/banner02.jpg"
-import divide from "../../public/img/divider.svg";
+import divide from "../../public/img/divider.webp";
 import imfg from "../../public/img/banner01.jpg";
 import imgss from "../../public/img/banner04 (1).webp"
 import styles from "./../app/page.module.css"
@@ -72,7 +72,7 @@ const Home = () => {
 <div>
 <nav>
 <section>
- <Image alt=""  src={divide} width={50} height={50}loading='lazy'></Image>
+ <Image alt=""  src={divide} loading='lazy' className={styles.l}></Image>
 </section>
 <h5>فحص قطاع العين</h5>
 
@@ -357,7 +357,7 @@ const Home = () => {
     <p>
     دقة في عملية التشخيص لوضع اليد على المشكلة الحقيقية.</p>
       </aside>
-      <aside data-aos="fade-up">
+      {/* <aside data-aos="fade-up">
       <Image alt="card_home" src={gog} width={70} height={70}loading='lazy'></Image>
         <h5>  ارخص الاسعار</h5>
     <p>
@@ -372,7 +372,7 @@ const Home = () => {
       <Image alt="card_home" src={go0g} width={70} height={70}loading='lazy'></Image>
         <h5> المتابعة </h5>
     <p>متابعة مع الحالة بشكل مستمر حتى تتم عملية الشفاء بفضل الله.</p>
-      </aside>
+      </aside> */}
     </section>
 
 </Container>
@@ -393,7 +393,7 @@ const Home = () => {
   </div>
 
 <section className={styles.card_h}>
-  <div data-aos="fade-up">
+  {/* <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
   <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover"   loading='lazy'></Image>
   </section>
@@ -448,7 +448,7 @@ const Home = () => {
 </section>
 
 
-  </div>
+  </div> */}
   <div data-aos="fade-up">
   <section className={styles.img_wrapper} >
   <Image alt="s"  className={styles.inner_img} src={imgw} objectFit="cover" loading='lazy'  ></Image>
@@ -505,9 +505,9 @@ const Home = () => {
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
+  {/* <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
   <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
-  <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
-  <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav>
+  <nav data-aos="fade-up"><Image alt="d" src={shada} loading='lazy'></Image></nav> */}
 
   </div>
 </div>
