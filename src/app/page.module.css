@@ -990,7 +990,9 @@ color: #082c46;
 
 .Carousel_img .Carousel_img_filter {
  filter: brightness(40%);
+ max-height: 80vh;
 }
+
 .active_dots_flex {
   position: relative;
 }

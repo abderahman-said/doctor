@@ -23,26 +23,26 @@ import AOS from 'aos';
 import { LazyLoadImage ,LazyLoadComponent } from 'react-lazy-load-image-component';
 import LazyLoad from 'react-lazyload';
 const Home = () => {
-  const [showButton, setShowButton] = useState(false);
+  const [showButton, setShimg1owButton] = useState(false);
   useEffect(() => { 
     AOS.init({ 
       duration: 1000
     }); 
 }, []);
-  useEffect(() => {
-    function handleScroll() {
-      if (window.scrollY > 370) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    }
+  // useEffect(() => {
+  //   function handleScroll() {
+  //     if (window.scrollY > 370) {
+  //       setShowButton(true);
+  //     } else {
+  //       setShowButton(false);
+  //     }
+  //   }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
   function handleButtonClick() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -51,6 +51,7 @@ const Home = () => {
   const handleSelect = (selectedIndex, e) => {
     setActiveIndex(selectedIndex);
   };
+
   return (
     <>
 {/* -------------------- */}
@@ -60,7 +61,7 @@ const Home = () => {
 <Carousel fade activeIndex={activeIndex} onSelect={handleSelect} interval={1000}>
   
         <Carousel.Item>
-        <Image loading='lazy' src={imfg} alt="img_carosel" className={styles.Carousel_img_filter} />
+        <Image loading='lazy' src={img1} alt="img_carosel" className={styles.Carousel_img_filter} />
           <Carousel.Caption>
           <section className={styles.Car_caption}>
 <div>
@@ -83,7 +84,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
+          <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy'  />
           <Carousel.Caption>
             <div className={styles.carsoul2}>
 
@@ -100,7 +101,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
+          <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter}  loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
@@ -116,7 +117,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <Image  src={imfg} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
+        <Image  src={img1} alt="img_carosel" className={styles.Carousel_img_filter} loading='lazy' />
           <Carousel.Caption>
           <div className={styles.carsoul2}>
 
