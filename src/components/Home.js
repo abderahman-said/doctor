@@ -37,6 +37,7 @@ const Home = () => {
         setShowButton(false);
       }
     }
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -136,7 +137,7 @@ const Home = () => {
         </Carousel.Item>
 
       </Carousel>
-<LazyLoad>
+{/* <LazyLoad> */}
 
        <div className={styles.dots}>
   <div className={activeIndex === 0 ? `${styles.dots_flex} ${styles.active_dots_flex}` : styles.dots_flex} >
@@ -168,7 +169,7 @@ const Home = () => {
     </div>
   </div>
 </div>
-</LazyLoad>
+{/* </LazyLoad> */}
     </div>
 
 
@@ -231,11 +232,11 @@ const Home = () => {
   <div className={styles.home_two_left} data-aos="fade-right">
 <div className={styles.home_two_left_rlative} >
     <div >
-    <LazyLoad height={"100%"} once><Image alt="" src={igws} width={320} height={330} loading='lazy'></Image></LazyLoad>
+    <LazyLoad ><Image alt="" src={igws} width={320} height={330} loading='lazy'></Image></LazyLoad>
     </div>
 
     <div className={styles.home_two_left_absol} >
-    <LazyLoad height={"100%"} once> <Image alt="" src={imgw}  width={300} height={300} loading='lazy'></Image></LazyLoad>
+    <LazyLoad> <Image alt="" src={imgw}  width={300} height={300} loading='lazy'></Image></LazyLoad>
     </div>
     <div className={styles.home_two_left_absol_p}><p >جراحات المياة البيضاء بالليزر والفاكو</p></div>
 
@@ -265,12 +266,12 @@ const Home = () => {
       <Col lg={8} sm={12} className={styles.col} data-aos="fade-left">
         <section className={styles.wh_doc_div_flex}>
         <div >
-         <section className={styles.wh_doc_div_back_img}> <Image alt="" loading='lazy' src={divide} width={50} height={50}></Image> </section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt="" loading='lazy' src={"https://doctor-haleem.com/images/svg/sample2.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
         <div >
-         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={divide} width={50} height={50}></Image> </section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
@@ -278,12 +279,12 @@ const Home = () => {
 
         <section className={styles.wh_doc_div_flex}>
         <div >
-         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={divide} width={50} height={50}></Image> </section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample2.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
         <div >
-         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={divide} width={50} height={50}></Image> </section>
+         <section className={styles.wh_doc_div_back_img}> <Image alt=""loading='lazy' src={"https://doctor-haleem.com/images/svg/sample.svg"} width={50} height={50}></Image> </section>
         <h6>متواجدون على مدار اليوم</h6>
         <p>متواجدون على مدار اليوم و جاهزية كاملة لحالات الطوارئ</p>
         </div>
@@ -661,7 +662,7 @@ const Home = () => {
 
 </section>
 </LazyLoad>
-<LazyLoad height={"100%"} once>
+<LazyLoad>
 
 <section className={styles.number} data-aos="fade-up">
     <h4>تواصل معنا الأن واحجز موعد كشفك التالي واحصل على افضل خدمة طبية</h4>
